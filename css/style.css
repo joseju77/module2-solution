@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    border-radius: 2%;
+    font-family: "Fantasy", monospace;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    font-size: 175%;
+}
+span {
+    float: right;
+    border: solid black;
+    border-width: 0px 0px 2px 2px;
+    padding: 2px 10px 2px 10px;
+    font-size: 125%; 
+    margin-bottom: 5px;
+}
+p {
+    width: 100%;
+    overflow: auto;
+}
+.container {
+    float: left;
+    margin-bottom: 2.5%;
+}
+.element {
+    border: 2px solid black;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    background-color: rgba(153, 153, 153, 1);
+    padding: 0px 0px 5px 5px;
+}
+#top-title-1 {
+    background-color: rgba(213, 152, 152, 1);
+}
+#top-title-2 {
+    background-color: rgba(193, 69, 67, 1);
+    color: white;
+}
+#top-title-3 {
+    background-color: rgba(229, 209, 152, 1);
+}
+@media (min-width: 992px){
+    .container {
+        width: 33.3%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .container {
+        width: 50%;
+    }
+    .container:nth-child(3) {
+        width: 100%;
+    }
+    .container:nth-child(3)>div {
+        width: 97.5%;
+    }
+}
+@media (max-width: 767px){
+    .container {
+        width: 100%;
+    }
+}
